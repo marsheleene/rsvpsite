@@ -2,49 +2,35 @@ import FactsheetItem from "./FactsheetItem";
 
 function Factsheet() {
     return (
-        <div>
+        <article>
             <h1 class="my-8 text-center text-2xl">
             Factsheet
             </h1>
 
-            <FactsheetItem>
-                <h2>
-                Developer:
-                </h2>
-
+            <FactsheetItem title="Developper:">
                 <h3>
-                Team RSVP
+                    Team RSVP
                 </h3>
             </FactsheetItem>
 
-            <FactsheetItem>
-                <h2>
-                Release date:
-                </h2>
-
+            <FactsheetItem title="Release date:">
                 <div>
-                TBD
+                    TBD
                 </div>
             </FactsheetItem>
 
-            <FactsheetItem>
-                <h2>
-                Platforms: 
-                </h2>
-                
+            <FactsheetItem title="Platforms:">
                 <div>
-                PC
+                    PC
                 </div>
             </FactsheetItem>
 
-            <FactsheetItem>
-                <h2>Website:</h2>
-
+            <FactsheetItem title="Website:">
                 <div>
-                <a href="https://www.rsvpgame.com" target="_blank">https://rsvpgame.com</a>
+                    <a href="https://www.rsvpgame.com" target="_blank" rel="noreferrer">https://rsvpgame.com</a>
                 </div>
             </FactsheetItem>
-        </div>
+        </article>
     );
 }
 

@@ -1,8 +1,11 @@
 function FactsheetItem(props) {
     return (
-        <div class="factsheet-item">
-            {props.children}
-        </div>
+        <section class="factsheet-item">
+            <h2>{props.title}</h2>
+            <div>
+                {props.children}
+            </div>
+        </section>
     );
 }
 
