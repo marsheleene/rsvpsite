@@ -1,9 +1,12 @@
 import TeamMember from "./TeamMember";
 
-function Team(props) {
+import portrait_matthieu from '../../images/portrait_matthieu.png'
+import portrait_zoe from '../../images/portrait_zoe.png'
+
+function TeamSection(props) {
   return (
     <div class="columns-2">
-      <TeamMember name="Matthieu Golsenne">
+      <TeamMember name="Matthieu Golsenne" portrait={portrait_matthieu}>
         <p>S’occupera de la programmation et participera
   au game design et à l’écriture du scénario.
   Après une brève incartade dans la recherche puis
@@ -21,7 +24,7 @@ function Team(props) {
   même table (et ça s’est bien passé).</p>
     </TeamMember>
     
-    <TeamMember name="Zoé Bergeret">
+    <TeamMember name="Zoé Bergeret" portrait={portrait_zoe}>
     <p>S’occupera de la direction artistique et participera
   au game design et à l’écriture du scénario.
   Illustratrice et graphiste diplômée à Cepreco en
@@ -41,4 +44,4 @@ function Team(props) {
   );
 }
 
-export default Team;
+export default TeamSection;

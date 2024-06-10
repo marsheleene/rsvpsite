@@ -1,13 +1,12 @@
-
-
 function TeamMember(props) {
   return (
-    <section>
+    <div>
+      <img class="portrait" src={props.portrait} />
       <h2>{props.name}</h2>
       <div>
         {props.children}
       </div>
-    </section>
+    </div>
   );
 }
 

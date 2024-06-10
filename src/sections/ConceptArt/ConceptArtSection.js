@@ -1,9 +1,9 @@
 import ImageItem from "./ImageItem";
 
-import img_concept1 from './images/concept1.png';
-import img_concept2 from './images/concept2.png';
-import img_concept3 from './images/concept3.png';
-import img_concept4 from './images/concept4.png';
+import img_concept1 from '../../images/concept1.png';
+import img_concept2 from '../../images/concept2.png';
+import img_concept3 from '../../images/concept3.png';
+import img_concept4 from '../../images/concept4.png';
 
 function ConceptArtSection(props) {
   return (

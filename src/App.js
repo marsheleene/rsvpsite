@@ -3,12 +3,10 @@ import Presskit from './Presskit';
 
 function App() {
   return (
-    <>
       <Routes>
         <Route path="presskit" element={<Presskit />} />
         <Route path="*" element={<Navigate to="presskit" />} />
       </Routes>
-    </>
   );
 }
 
