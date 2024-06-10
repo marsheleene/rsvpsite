@@ -1,9 +1,9 @@
 function CreditsItem(props) {
     return (
-        <>
-            <div class="credits_name">{props.name}</div>
-            <div class="credits_roles">{props.roles}</div>
-        </>
+        <div class="break-inside-avoid-column">
+            <div class="font-semibold">{props.name}</div>
+            <div class="">{props.roles}</div>
+        </div>
     );
 }
 

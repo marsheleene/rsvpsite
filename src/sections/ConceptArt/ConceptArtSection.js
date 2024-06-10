@@ -7,7 +7,7 @@ import img_concept4 from '../../images/concept4.png';
 
 function ConceptArtSection(props) {
   return (
-    <div class="columns-2">
+    <div class="md:columns-2">
       <ImageItem src={img_concept1} alt="Concept art for the video game RSVP" />
       <ImageItem src={img_concept2} alt="Concept art for the video game RSVP" />
       <ImageItem src={img_concept3} alt="Concept art for the video game RSVP" />

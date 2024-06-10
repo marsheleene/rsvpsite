@@ -3,7 +3,7 @@ import FactsheetItem from "./FactsheetItem";
 function Factsheet() {
     return (
         <article>
-            <h1 class="my-8 text-center text-2xl">
+            <h1 class="my-8 text-center font-semibold text-2xl">
             Factsheet
             </h1>
 

@@ -7,16 +7,16 @@ function CreditsSection() {
                 <li>
                     <CreditsItem name="Matthieu Golsenne" roles="Creative Director, Designer, Programmer" />
                 </li>
-                <li>
+                <li class="mt-4">
                     <CreditsItem name="Zoé Bergeret" roles="Art Director, Designer" />
                 </li>
             </ul>
-            <p>
+            <p class="font-semibold text-lg text-center mt-4">
                 RSVP Additional Credits
             </p>
             <ul>
-                <li>
-                    <CreditsItem name="Elizabeth Maler" roles="Producing, Designer" />
+                <li class="mt-4">
+                    <CreditsItem name="Elizabeth Maler" roles="Producer, Designer" />
                 </li>
             </ul>
         </>
