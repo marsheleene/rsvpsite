@@ -6,7 +6,7 @@ import portrait_zoe from '../../images/portrait_zoe.png'
 function TeamSection(props) {
   return (
     <div class="columns-2">
-      <TeamMember name="Matthieu Golsenne" portrait={portrait_matthieu}>
+      <TeamMember name="Matthieu Golsenne" portrait={portrait_matthieu} linkedIn="https://www.linkedin.com/in/mgolsenne/">
         <p>S’occupera de la programmation et participera
   au game design et à l’écriture du scénario.
   Après une brève incartade dans la recherche puis
@@ -24,7 +24,7 @@ function TeamSection(props) {
   même table (et ça s’est bien passé).</p>
     </TeamMember>
     
-    <TeamMember name="Zoé Bergeret" portrait={portrait_zoe}>
+    <TeamMember name="Zoé Bergeret" portrait={portrait_zoe} website="https://zoebergeret.fr/" linkedIn="https://www.linkedin.com/in/zoe-bergeret/">
     <p>S’occupera de la direction artistique et participera
   au game design et à l’écriture du scénario.
   Illustratrice et graphiste diplômée à Cepreco en
