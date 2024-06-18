@@ -1,6 +1,5 @@
 name: publish-to-github-pages
-on: [push, workflow_dispatch]
-   
+on: [workflow_dispatch, push]
 
 permissions:
   contents: read
