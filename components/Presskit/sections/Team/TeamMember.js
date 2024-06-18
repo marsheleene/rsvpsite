@@ -1,0 +1,29 @@
+import Image from 'next/image';
+
+import iconLinkedIn from '../../../../images/logo_linkedin.png';
+import iconWebsite from '../../../../images/logo_website.png';
+
+function TeamMember(props) {
+  let linkedIn;
+  if (props.linkedIn) {
+    linkedIn =  <li class="mr-1"><a href={props.linkedIn} target="_blank"> <Image src={iconLinkedIn} alt="LinkedIn Icon" className="max-w-12 md:max-w-8" /> </a></li>;
+  }
+  let website;
+  if (props.website) {
+    website =  <li class="ml-1"><a href={props.website} target="_blank"> <Image src={iconWebsite} alt="Website Icon" className="max-w-12 md:max-w-8" /> </a></li>;
+  }
+  return (
+    <div class="break-inside-avoid-column">
+      <Image className="max-w-64 max-h-64 mx-auto" src={props.portrait} alt="Portrait" />
+      <h2 class="font-semibold text-center">{props.name}</h2>
+      <ul class="flex flex-row place-content-center mt-1">
+
+      </ul>
+      <div class="mt-4">
+        {props.children}
+      </div>
+    </div>
+  );
+}
+
+export default TeamMember;
