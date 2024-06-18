@@ -5,7 +5,7 @@ function ImageItem(props) {
   let sizes = "(max-width: 768px) 100vw, 50vw";
   if (props.full) {
     className += " column-span-all";
-    sizes = "(max-width: 768px) 66vw, 100vw";
+    sizes = "(max-width: 768px) 50vw, 100vw";
   }
   return (
     <a href={props.src.src} target="_blank" className={className}>
