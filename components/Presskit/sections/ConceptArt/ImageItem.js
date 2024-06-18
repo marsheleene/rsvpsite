@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function ImageItem(props) {
   let className = "break-inside-avoid-column block";
@@ -8,14 +9,18 @@ function ImageItem(props) {
     sizes = "(max-width: 768px) 50vw, 100vw";
   }
   return (
-    <a href={props.src.src} target="_blank" className={className}>
+    <Link 
+      href={props.src.src} 
+      target="_blank" 
+      className={className}
+    >
       <Image 
         src={props.src} 
         sizes={sizes}
         alt={props.alt} 
         quality={100}
       />
-    </a>
+    </Link>
   );
 }
 

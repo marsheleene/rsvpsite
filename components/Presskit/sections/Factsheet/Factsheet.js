@@ -1,4 +1,5 @@
 import FactsheetItem from "./FactsheetItem";
+import Link from "next/link";
 
 function Factsheet() {
     return (
@@ -27,7 +28,7 @@ function Factsheet() {
 
             <FactsheetItem title="Site web :">
                 <div>
-                    <a href="https://www.rsvpgame.com" target="_blank" rel="noreferrer">https://rsvpgame.com</a>
+                    <Link href="https://www.rsvpgame.com" target="_blank" rel="noreferrer">https://rsvpgame.com</Link>
                 </div>
             </FactsheetItem>
         </article>
