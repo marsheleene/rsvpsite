@@ -6,7 +6,7 @@ import header from "../../../images/opt_header_v1.webp";
 
 function Header() {
     return (
-        <Link href={header_PNG} target="_blank">
+        <Link href={header_PNG.src} target="_blank">
             <Image 
                 className="mx-auto px-4 mt-4 md:px-8 md:mt-8" 
                 src={header} 
