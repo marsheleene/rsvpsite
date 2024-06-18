@@ -12,7 +12,7 @@ function Header() {
                 src={header} 
                 alt="Keyart du jeu RSVP"
                 priority
-                sizes="(max-width: 768px) 50vw, 100vw"
+                sizes="(max-width: 768px) 20vw, 100vw"
                 quality={100}
             />
         </Link>
