@@ -1,8 +1,12 @@
 import Image from "next/image";
 
 function ImageItem(props) {
+  let className = "break-inside-avoid-column block";
+  if (props.className) {
+    className += " " + props.className;
+  }
   return (
-    <a href={props.src.src} target="_blank" class="break-inside-avoid-column">
+    <a href={props.src.src} target="_blank" className={className}>
       <Image 
         className="w-full aspect-auto" 
         src={props.src} 
