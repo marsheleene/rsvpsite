@@ -10,7 +10,6 @@ function ImageItem(props) {
   return (
     <a href={props.src.src} target="_blank" className={className}>
       <Image 
-        className="aspect-auto" 
         src={props.src} 
         sizes={sizes}
         alt={props.alt} 
