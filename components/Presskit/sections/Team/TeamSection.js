@@ -1,7 +1,7 @@
 import TeamMember from "./TeamMember";
 
-import portraitMatthieu from '../../../../images/portrait_matthieu.webp'
-import portraitZoe from '../../../../images/portrait_zoe.webp'
+import portraitMatthieu from '../../../../images/opt_portrait_matthieu.webp'
+import portraitZoe from '../../../../images/opt_portrait_zoe.webp'
 
 function TeamSection(props) {
   return (

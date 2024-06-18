@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import header_PNG from "../../../images/header_v1.png";
-import header from "../../../images/header_v1.webp";
+import header from "../../../images/opt_header_v1.webp";
 
 function Header() {
     return (

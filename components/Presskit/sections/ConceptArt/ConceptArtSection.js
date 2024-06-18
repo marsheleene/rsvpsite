@@ -5,11 +5,11 @@ import img_concept2_PNG from '../../../../images/concept2.png';
 import img_concept3_PNG from '../../../../images/concept3.png';
 import img_concept4_PNG from '../../../../images/concept4.png';
 import img_concept5_PNG from '../../../../images/concept5.png';
-import img_concept1 from '../../../../images/concept1.webp'
-import img_concept2 from '../../../../images/concept2.webp';
-import img_concept3 from '../../../../images/concept3.webp';
-import img_concept4 from '../../../../images/concept4.webp';
-import img_concept5 from '../../../../images/concept5.webp';
+import img_concept1 from '../../../../images/opt_concept1.webp'
+import img_concept2 from '../../../../images/opt_concept2.webp';
+import img_concept3 from '../../../../images/opt_concept3.webp';
+import img_concept4 from '../../../../images/opt_concept4.webp';
+import img_concept5 from '../../../../images/opt_concept5.webp';
 
 function ConceptArtSection(props) {
   return (
