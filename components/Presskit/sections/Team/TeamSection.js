@@ -1,12 +1,12 @@
 import TeamMember from "./TeamMember";
 
-import portrait_matthieu from '../../../../images/portrait_matthieu.png'
-import portrait_zoe from '../../../../images/portrait_zoe.png'
+import portraitMatthieu from '../../../../images/portrait_matthieu.webp'
+import portraitZoe from '../../../../images/portrait_zoe.webp'
 
 function TeamSection(props) {
   return (
     <div class="md:columns-2">
-      <TeamMember name="Matthieu Golsenne" portrait={portrait_matthieu} linkedIn="https://www.linkedin.com/in/mgolsenne/">
+      <TeamMember name="Matthieu Golsenne" portrait={portraitMatthieu} linkedIn="https://www.linkedin.com/in/mgolsenne/">
         <p>S’occupera de la programmation et participera
   au game design et à l’écriture du scénario.</p>
     <p class="mt-4">
@@ -25,7 +25,7 @@ function TeamSection(props) {
   même table (et ça s’est bien passé).</p>
     </TeamMember>
     
-    <TeamMember name="Zoé Bergeret" portrait={portrait_zoe} website="https://zoebergeret.fr/" linkedIn="https://www.linkedin.com/in/zoe-bergeret/">
+    <TeamMember name="Zoé Bergeret" portrait={portraitZoe} website="https://zoebergeret.fr/" linkedIn="https://www.linkedin.com/in/zoe-bergeret/">
     <p>S’occupera de la direction artistique et participera
   au game design et à l’écriture du scénario.</p>
     <p class="mt-4">

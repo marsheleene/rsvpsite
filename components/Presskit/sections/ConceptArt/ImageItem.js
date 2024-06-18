@@ -15,7 +15,7 @@ function ImageItem(props) {
       className={className}
     >
       <Image 
-        src={props.src} 
+        src={props.display} 
         sizes={sizes}
         alt={props.alt} 
         quality={100}

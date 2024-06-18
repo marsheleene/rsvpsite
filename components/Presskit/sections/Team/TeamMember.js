@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import iconLinkedIn from '../../../../images/logo_linkedin.png';
-import iconWebsite from '../../../../images/logo_website.png';
+import iconLinkedIn from '../../../../images/logo_linkedin.webp';
+import iconWebsite from '../../../../images/logo_website.webp';
 
 function TeamMember(props) {
   let linkedIn;
