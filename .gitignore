@@ -15,6 +15,7 @@
 .next
 next-env.d.ts
 dist
+out
 
 # misc
 .DS_Store
