@@ -28,7 +28,7 @@ function Factsheet() {
 
             <FactsheetItem title="Site web :">
                 <div>
-                    <Link href="https://www.rsvpgame.com" target="_blank" rel="noreferrer">https://rsvpgame.com</Link>
+                    <Link href="https://www.rsvpgame.com" target="_blank" className="hover:underline">https://rsvpgame.com</Link>
                 </div>
             </FactsheetItem>
         </article>

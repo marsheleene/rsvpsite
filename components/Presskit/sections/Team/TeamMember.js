@@ -15,7 +15,7 @@ function TeamMember(props) {
   }
   return (
     <div class="break-inside-avoid-column">
-      <Image className="max-w-64 max-h-64 mx-auto" src={props.portrait} alt="Portrait" />
+      <Image className="max-w-64 max-h-64 mx-auto drop-shadow-lg hover:scale-105 transition duration-300" src={props.portrait} alt="Portrait" />
       <h2 class="font-semibold text-center">{props.name}</h2>
       <ul class="flex flex-row place-content-center mt-1">
         {linkedIn && linkedIn}
