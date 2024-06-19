@@ -24,7 +24,7 @@ function ListIcon(props) {
 function FeaturesSection() {
     return (
         <Item title="Caractéristiques">
-            <div className="grid grid-cols-[3rem_auto] gap-y-4">
+            <div className="grid grid-cols-[3rem_auto] gap-y-8 md:gap-y-4">
                 <ListIcon 
                     src={icon_heart2} 
                     alt="Coeur" 
