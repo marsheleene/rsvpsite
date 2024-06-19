@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function ImageItem(props) {
   let className = "break-inside-avoid-column block cursor-pointer my-drop-shadow hover:scale-105 transition duration-300";
@@ -14,10 +15,10 @@ function ImageItem(props) {
   }
 
   return (
-    <a 
+    <Link 
       href={props.src.src}
       className={className}
-      download={props.name}
+      target="_blank"
     >
       <Image 
         src={props.display} 
@@ -27,7 +28,7 @@ function ImageItem(props) {
         className="mx-auto"
         priority={props.large}
       />
-    </a>
+    </Link>
   );
 }
 
