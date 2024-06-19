@@ -21,7 +21,7 @@ function TeamMember(props) {
   return (
     <div className={className}>
       <Image className="max-w-64 max-h-64 mx-auto drop-shadow-lg hover:scale-105 transition duration-300" src={props.portrait} alt={"Image portrait de " + props.name} />
-      <h2 class="font-semibold text-center text-xl">{props.name}</h2>
+      <h2 class="font-coquette text-center text-2xl">{props.name}</h2>
       <ul class="flex flex-row place-content-center mt-2">
         {linkedIn && linkedIn}
         {website && website}

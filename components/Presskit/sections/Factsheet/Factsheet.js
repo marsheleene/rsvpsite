@@ -4,11 +4,11 @@ import Link from "next/link";
 function Factsheet() {
     return (
         <article>
-            <h1 class="my-8 text-center font-semibold text-2xl">
+            <h1 class="my-8 text-center font-coquette text-3xl">
             Factsheet
             </h1>
 
-            <FactsheetItem title="Developperur :">
+            <FactsheetItem title="Developpeur :">
                 <h3>
                     Team RSVP
                 </h3>

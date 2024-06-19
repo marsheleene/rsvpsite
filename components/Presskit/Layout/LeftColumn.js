@@ -8,11 +8,11 @@ function LeftColumn() {
         <>
             <Factsheet />
 
-            <Item title="RSVP Credits">
+            <Item title="Crédits">
                 <CreditsSection />
             </Item>
 
-            <Item title="Contact">
+            <Item title="Contacts">
                 <ContactSection />
             </Item>
         </>

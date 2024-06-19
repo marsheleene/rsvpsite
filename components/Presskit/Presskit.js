@@ -4,9 +4,9 @@ import Bottom from './Layout/Bottom';
 import Header from './Layout/Header';
 import Footer from './Layout/Footer';
 
-function Presskit() {
+function Presskit(props) {
   return (
-    <div>
+    <div className={"font-inter " + (props.className && props.className)}>
       <header>
         <Header />
       </header>

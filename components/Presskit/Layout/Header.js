@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import header_PNG from "../../../images/header_v1.png";
+import { usePathname } from 'next/navigation'
+
 import header from "../../../images/opt_header_v1.webp";
 
 function Header() {
+    const pathname = usePathname();
     return (
-        <Link href={header_PNG.src} target="_blank">
+        <Link href={pathname}>
             <Image 
                 className="mx-auto px-4 mt-4 md:px-8 md:mt-8" 
                 src={header} 

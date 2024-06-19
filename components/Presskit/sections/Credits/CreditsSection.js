@@ -11,8 +11,8 @@ function CreditsSection() {
                     <CreditsItem name="Zoé Bergeret" roles="Art Director, Designer" />
                 </li>
             </ul>
-            <p class="font-semibold text-lg text-center mt-4">
-                RSVP Additional Credits
+            <p class="font-coquette text-lg text-center mt-4">
+                Crédits additionnels
             </p>
             <ul>
                 <li class="mt-4">
