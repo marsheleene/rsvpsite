@@ -1,24 +1,59 @@
 import Item from "../Item";
+import Image from "next-export-optimize-images/image";
+
+import icon_heart2 from "../../../../images/icon_heart2.png";
+import icon_heart3 from "../../../../images/icon_heart3.png";
+import icon_heart4 from "../../../../images/icon_heart4.png";
+import icon_heart6 from "../../../../images/icon_heart6.png";
 
 function FeaturesSection() {
     return (
         <Item title="Caractéristiques">
-          <ul>
-            <li>Dans RSVP, la joueuse incarne une wedding planneuse au service d’une famille. Elle devra créer
-            des plans de table pour chacun des mariages de cette famille à travers les générations.</li>
+            <div className="grid grid-cols-[4rem_auto] gap-y-4">
+                <Image 
+                    src={icon_heart2} 
+                    alt="Coeur" 
+                    quality={100}
+                    className="w-8 place-self-center"
+                />
+                <p>
+                    Dans RSVP, le joueur incarne un·e wedding planner au service d’une famille. Il devra créer
+                    des <b>plans de table</b> pour chacun des mariages de cette famille à travers le temps.
+                </p>
 
-            <li>Il s’agit d’un mélange unique de jeu d’enquête et de puzzle, dans lequel la joueuse devra trouver
-            les indices qui lui permettront de déduire quels placements rempliront les contraintes.</li>
+                <Image 
+                    src={icon_heart4} 
+                    alt="Coeur" 
+                    quality={100}
+                    className="w-8 place-self-center"
+                />
+                <p>
+                    Il s’agit d’<b>un mélange unique de jeu d’enquête et de puzzle</b>, dans lequel le joueur devra trouver
+                    les indices qui lui permettront de déduire quels placements rempliront <b>les contraintes</b>.
+                </p>
 
-            <li>Il s’agit également d’un jeu narratif, dans lequel la joueuse se place en cheffe d’orchestre de
-            l’histoire racontée. C’est elle qui est en charge de la destinée et des dramas de la famille.</li>
+                <Image 
+                    src={icon_heart3} 
+                    alt="Coeur" 
+                    quality={100}
+                    className="w-8 place-self-center"
+                />
+                <p>
+                    Les relations des personnages les uns envers les autres vont <b>évoluer en fonction de leur placement </b>
+                    lors des mariages précédents. Le joueur observera <b>les conséquences de ses choix</b> lors des mariages suivants.
+                </p>
 
-            <li>Les relations des personnages les uns envers les autres vont évoluer en fonction de leur entourage
-            lors des mariages précédents. La joueuse observe ces conséquences lors des mariages suivants.</li>
-
-            <li>C’est la joueuse qui se fixe ses objectifs : elle pourra essayer de créer des placements optimaux
-            selon ses critères, ou bien s’amuser à expérimenter telles ou telles relations au fil des parties.</li>
-          </ul>
+                <Image 
+                    src={icon_heart6} 
+                    alt="Coeur" 
+                    quality={100}
+                    className="w-8 place-self-center"
+                />
+                <p>
+                    <b>C’est le joueur qui se fixe ses objectifs</b> : il pourra essayer de créer des placements optimaux
+                    selon ses critères, ou bien s’amuser à expérimenter telles ou telles relations au fil des parties.
+                </p>
+            </div>
         </Item>
     );
 }

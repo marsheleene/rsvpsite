@@ -1,6 +1,6 @@
 import Presskit from "./components/Presskit/Presskit";
 
-import { Inter, Bree_Serif } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import localFont from 'next/font/local';
 
 const fontCoquette = localFont({ 
@@ -13,15 +13,9 @@ const fontInter = Inter({
   variable: '--font-inter'
 });
 
-const fontBree = Bree_Serif({ 
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-bree'
-});
-
 function App() {
   return (
-      <Presskit className={`${fontInter.variable} ${fontBree.variable} ${fontCoquette.variable}`} />
+      <Presskit className={`${fontInter.variable} ${fontCoquette.variable}`} />
   );
 }
 
