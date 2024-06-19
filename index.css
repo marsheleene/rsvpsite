@@ -26,12 +26,12 @@ code {
 }
 
 
-#downloadButton:hover #icon-download {
+div:hover > #icon-download {
   transform: scale(1.5);
 }
 
 @media (max-width: 768px) {
-  #downloadButton:hover #icon-download {
+  #download-button:hover #icon-download {
     transform: scale(1);
   }
 }

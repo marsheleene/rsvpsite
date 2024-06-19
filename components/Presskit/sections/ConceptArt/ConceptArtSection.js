@@ -27,23 +27,20 @@ function ConceptArtSection(props) {
 
   return (
     <div className="flex flex-col items-center">
-      <a 
-        id="downloadButton" 
-        href="#downloadButton" 
-        className="hover:underline md:p-6 border-2 border-transparent rounded-2xl md:hover:border-[#DDBE71] transition duration-300" 
+      <div 
+        className="cursor-pointer flex flex-col items-center hover:underline md:p-6 border-2 border-transparent rounded-2xl md:hover:border-[#DDBE71] transition duration-300" 
         onClick={() => handleZip(images)}
       >
-        <div className="flex flex-col items-center">
-          <span className="text-center">
-            Télécharger toutes les images dans une archive .zip
-          </span>
-          <Image
-            id="icon-download"
-            src={icon_download}
-            className="w-16 md:w-12 mt-4 transition duration-300"
-          />
-        </div>
-      </a>
+        <span className="text-center">
+          Télécharger toutes les images dans une archive .zip
+        </span>
+        <Image
+          id="icon-download"
+          src={icon_download}
+          alt="Bouton de téléchargement"
+          className="w-16 md:w-12 mt-4 transition duration-300"
+        />
+      </div>
 
       <div class="md:columns-2 mt-8">
         <ImageItem className="md:mx-auto w-full md:w-9/12" center large src={img_concept5_PNG} display={img_concept5} name="concept5.png" alt="Concept art for the video game RSVP" />

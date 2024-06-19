@@ -3,7 +3,9 @@
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <url>
        <loc>https://rsvpgame.com</loc>
-       <lastmod>2024-06-18</lastmod>
+       <xhtml:link rel="alternate" hreflang="fr" href="https://rsvpgame.com/fr" />
+       <xhtml:link rel="alternate" hreflang="en" href="https://rsvpgame.com/en" />
+       <lastmod>2024-06-19</lastmod>
      </url>
    </urlset>
 </xml>
