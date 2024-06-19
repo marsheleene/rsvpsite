@@ -5,7 +5,7 @@ import portraitZoe from '../../../../images/opt_portrait_zoe.webp'
 
 function TeamSection(props) {
   return (
-    <div class="md:columns-2 md:gap-x-32 md:flex md:justify-center">
+    <div class="md:columns-2 md:gap-x-12 xl:gap-x-32 md:flex md:justify-center">
       <TeamMember name="Matthieu Golsenne" portrait={portraitMatthieu} linkedIn="https://www.linkedin.com/in/mgolsenne/" className="max-w-xl">
         <p>S’occupera de la programmation et participera
   au game design et à l’écriture du scénario.</p>
