@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function ImageItem(props) {
   let className = "break-inside-avoid-column block cursor-pointer my-drop-shadow hover:scale-105 transition duration-300";
-  let sizes = "(max-width: 768px) 100vw, 50vw";
+  let sizes = "(max-width: 768px) 50vw, 50vw";
   if (!props.large) {
     className += " max-w-4xl";
   }
