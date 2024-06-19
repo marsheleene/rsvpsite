@@ -4,10 +4,10 @@ function ContactSection() {
     return (
         <ul>
             <li>
-                <ContactItem title="Business Inquiries" contact="mailto:contact@rsvpgame.com" contactDisplay="contact@rsvpgame.com" />
+                <ContactItem title="Business" contact="mailto:contact@rsvpgame.com" contactDisplay="contact@rsvpgame.com" />
             </li>
             <li class="mt-4">
-                <ContactItem title="Press Requests" contact="mailto:contact@rsvpgame.com" contactDisplay="contact@rsvpgame.com" />
+                <ContactItem title="Presse" contact="mailto:contact@rsvpgame.com" contactDisplay="contact@rsvpgame.com" />
             </li>
             <li class="mt-4">
                 <ContactItem title="Web" contact="https://rsvpgame.com" contactDisplay="rsvpgame.com" />

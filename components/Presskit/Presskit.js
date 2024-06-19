@@ -11,7 +11,7 @@ function Presskit(props) {
         <Header />
       </header>
 
-      <main class="md:grid grid-cols-3 gap-10 mx-6 md:mx-80">
+      <main class="md:grid grid-cols-3 gap-10 mx-6 md:mx-20 xl:mx-80">
 
         <div class="hidden md:block col-span-1 break-inside-avoid-column mb-10">
           <LeftColumn />
