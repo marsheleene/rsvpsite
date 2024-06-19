@@ -10,9 +10,12 @@ function DescriptionSection() {
               envies... et contempler les conséquences.</p>
             
             <p>R.S.V.P. est un jeu d'enquête et de puzzle narratif dans lequel vous incarnez un-e wedding planner qui doit designer 
-              les plans de table de tous les mariages d'une même famille au fil du temps. En fonction des placements, les affinités 
-              des personnages les uns envers les autres vont varier, jusqu’à changer leurs relations et faire évoluer leurs arcs narratifs.
-              Ce sera à vous d'essayer de contenter le plus grand nombre de convives, ou bien de manipuler leurs relations à leur insu 
+              les plans de table de tous les mariages d'une même famille au fil du temps.</p>
+              
+            <p>En fonction des placements, les affinités 
+              des personnages les uns envers les autres vont varier, jusqu’à changer leurs relations et faire évoluer leurs arcs narratifs.</p>
+
+            <p>Ce sera à vous d'essayer de contenter le plus grand nombre de convives, ou bien de manipuler leurs relations à leur insu 
               selon vos envies...</p>
           </Item>
     );

@@ -13,9 +13,9 @@ function Header() {
                 className="mx-auto px-4 mt-4 md:px-8 md:mt-8" 
                 src={header} 
                 alt="Image d'illustration de RSVP : le jeu vidéo"
-                priority
                 sizes="(max-width: 768px) 50vw, 100vw"
                 quality={100}
+                priority
             />
         </Link>
     );
