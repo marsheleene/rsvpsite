@@ -1,7 +1,8 @@
-import { useState, useCallback } from "react";
 import { useDownload } from "./useDownload";
 import ImageItem from "./ImageItem";
+import Image from "next/image";
 
+import icon_download from '../../../../images/icon_download.webp';
 import img_concept1_PNG from '../../../../images/concept1.png'
 import img_concept2_PNG from '../../../../images/concept2.png';
 import img_concept3_PNG from '../../../../images/concept3.png';
@@ -25,14 +26,23 @@ function ConceptArtSection(props) {
   ]; 
 
   return (
-    <div class="text-center">
+    <div className="flex flex-col items-center">
       <a 
         id="downloadButton" 
         href="#downloadButton" 
-        className="hover:underline md:p-6 md:hover:border-2" 
+        className="hover:underline md:p-6 border-2 border-transparent rounded-2xl md:hover:border-[#DDBE71] transition duration-300" 
         onClick={() => handleZip(images)}
       >
-        Télécharger toutes les images dans une archive .zip
+        <div className="flex flex-col items-center">
+          <span>
+            Télécharger toutes les images dans une archive .zip
+          </span>
+          <Image
+            id="icon-download"
+            src={icon_download}
+            className="w-16 md:w-12 mt-4 transition duration-300"
+          />
+        </div>
       </a>
 
       <div class="md:columns-2 mt-8">

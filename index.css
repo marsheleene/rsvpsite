@@ -24,3 +24,14 @@ code {
 .my-drop-shadow:hover {
   filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.15)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.3));
 }
+
+
+#downloadButton:hover #icon-download {
+  transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+  #downloadButton:hover #icon-download {
+    transform: scale(1);
+  }
+}
