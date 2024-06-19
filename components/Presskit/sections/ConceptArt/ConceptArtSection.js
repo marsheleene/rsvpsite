@@ -1,6 +1,6 @@
 import { useDownload } from "./useDownload";
 import ImageItem from "./ImageItem";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 
 import icon_download from '../../../../images/icon_download.webp';
 import img_concept1_PNG from '../../../../images/concept1.png'
