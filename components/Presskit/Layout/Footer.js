@@ -1,7 +1,12 @@
+import CNC from "../Sections/CNC/CNC";
+import Copyright from "../Sections/Copyright/Copyright";
+
 function Footer() {
     return (
         <>
-            <p>© Team RSVP, 2024</p>
+        <p class="mt-4"></p>
+            <CNC />
+            <Copyright />
         </>
     );
   }

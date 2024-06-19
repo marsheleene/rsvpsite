@@ -9,6 +9,8 @@ function Bottom() {
                 <ConceptArtSection />
             </Item>
 
+            <p class="my-4"></p>
+
             <Item title="À propos de la Team RSVP">
                 <TeamSection />
             </Item>

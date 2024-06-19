@@ -42,7 +42,7 @@ function Presskit() {
 
       </main>
       
-      <footer class="text-sm font-light italic text-center mb-10">
+      <footer class="mb-10">
         <Footer />
       </footer>
     </div>
