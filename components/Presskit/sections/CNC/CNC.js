@@ -10,8 +10,9 @@ function CNC() {
         <Image 
           src={logoCNC}
           alt="Logo du Centre national du cinéma et de l'image animée"
-          className="mx-auto px-4 max-w-sm"
+          className="mx-auto px-4 max-w-80 md:max-w-sm"
           quality={100}
+          sizes="(max-width: 768px) 100vw, 100vw"
         />
         
       </Link>

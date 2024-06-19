@@ -34,7 +34,7 @@ function ConceptArtSection(props) {
         onClick={() => handleZip(images)}
       >
         <div className="flex flex-col items-center">
-          <span>
+          <span className="text-center">
             Télécharger toutes les images dans une archive .zip
           </span>
           <Image
