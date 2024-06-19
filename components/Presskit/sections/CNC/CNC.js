@@ -6,6 +6,7 @@ import logoCNC from '../../../../images/logo_CNC.webp';
 function CNC() {
   return (
     <>
+      <p class="mb-2 text-center">Ce projet a reçu le soutien du CNC</p>
       <Link href="https://www.cnc.fr/professionnels/aides-et-financements/jeu-video/fonds-daide-au-jeu-video-fajv_191468">
         <Image 
           src={logoCNC}
@@ -14,9 +15,7 @@ function CNC() {
           quality={100}
           sizes="(max-width: 768px) 100vw, 100vw"
         />
-        
       </Link>
-      <p class="mt-2 text-center">Ce projet a reçu le soutien du CNC</p>
     </>
   );
 }

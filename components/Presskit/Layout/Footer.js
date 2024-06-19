@@ -4,7 +4,7 @@ import Copyright from "../sections/Copyright/Copyright";
 function Footer() {
     return (
         <>
-        <p class="mt-4"></p>
+            <p class="mt-12"></p>
             <CNC />
             <Copyright />
         </>
