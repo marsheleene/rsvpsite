@@ -1,5 +1,5 @@
-import CNC from "../Sections/CNC/CNC";
-import Copyright from "../Sections/Copyright/Copyright";
+import CNC from "../sections/CNC/CNC";
+import Copyright from "../sections/Copyright/Copyright";
 
 function Footer() {
     return (
