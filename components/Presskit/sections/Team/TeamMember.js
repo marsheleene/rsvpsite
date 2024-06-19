@@ -13,9 +13,14 @@ function TeamMember(props) {
   if (props.website) {
     website =  <li class="ml-3 md:ml-1"><Link href={props.website} target="_blank"> <Image src={iconWebsite} alt="Website Icon" className="max-w-16 md:max-w-8" /> </Link></li>;
   }
+  let className = "break-inside-avoid-column";
+  if (props.className) {
+    className += " " + props.className;
+  }
+
   return (
-    <div class="break-inside-avoid-column">
-      <Image className="max-w-64 max-h-64 mx-auto drop-shadow-lg hover:scale-105 transition duration-300" src={props.portrait} alt="Portrait" />
+    <div className={className}>
+      <Image className="max-w-64 max-h-64 mx-auto drop-shadow-lg hover:scale-105 transition duration-300" src={props.portrait} alt={"Image portrait de " + props.name} />
       <h2 class="font-semibold text-center text-xl">{props.name}</h2>
       <ul class="flex flex-row place-content-center mt-2">
         {linkedIn && linkedIn}
