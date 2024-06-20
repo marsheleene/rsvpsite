@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --link-color: #B79D60;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -28,7 +32,7 @@ div:hover > #icon-download {
 }
 
 a {
-  color:#B79D60;
-  text-decoration-color: #B79D60;
+  color: var(--link-color);
+  text-decoration-color: var(--link-color);
   text-decoration-thickness: 2px;
 }
