@@ -1,6 +1,7 @@
 import Item from "../Item";
 import Image from "next-export-optimize-images/image";
 
+import icon_heart1 from "../../../../images/icon_heart1.webp";
 import icon_heart2 from "../../../../images/icon_heart2.webp";
 import icon_heart3 from "../../../../images/icon_heart3.webp";
 import icon_heart4 from "../../../../images/icon_heart4.webp";
@@ -49,6 +50,11 @@ function FeaturesSection() {
                 <FeatureItem icon={icon_heart4}>
                     Il s’agit d’<b>un mélange unique de jeu d’enquête et de puzzle</b>, dans lequel le joueur devra trouver
                     les indices qui lui permettront de déduire quels placements rempliront <b>les contraintes</b>.
+                </FeatureItem>
+
+                <FeatureItem icon={icon_heart1}>
+                    Il s’agit également d’un jeu narratif, dans lequel le joueur se place en <b>chef d’orchestre de
+                    l’histoire</b>. C’est elle qui est en charge de <b>la destinée et des dramas</b> de la famille.
                 </FeatureItem>
 
                 <FeatureItem icon={icon_heart3}>
