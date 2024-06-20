@@ -2,9 +2,7 @@ import keyart from "../images/header_v1.png";
 
 export const metadata = {
     title: "RSVP : le jeu vidéo",
-    description: "La famille Lagrange des Bas-Moulins a besoin de vous pour organiser les plans de table de leurs mariages ! \
-        Les marié·e·s auront toujours des instructions précises que vous devez suivre. Pour le reste, libre à vous de satisfaire \
-        un maximum de convives, ou de les placer au gré de vos envies... et contempler les conséquences."
+    description: "RSVP est un jeu d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !"
 }
 
 export default function RootLayout({ children }) {
@@ -16,9 +14,7 @@ export default function RootLayout({ children }) {
                 <link rel="canonical" href="https://rsvpgame.com" key="canonical" />
                 <meta name="thumbnail" content={keyart.src} />
                 <meta property="og:title" content="RSVP : le jeu vidéo" />
-                <meta property="og:description" content="La famille Lagrange des Bas-Moulins a besoin de vous pour organiser les plans de table  \
-                    de leurs mariages ! Les marié·e·s auront toujours des instructions précises que vous devez suivre. Pour le reste, libre  \
-                    à vous de satisfaire un maximum de convives, ou de les placer au gré de vos envies... et contempler les conséquences." />
+                <meta property="og:description" content="RSVP est un jeu d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !" />
                 <meta property="og:image" content={keyart.src} />
             </head>
             <body>
@@ -26,4 +22,4 @@ export default function RootLayout({ children }) {
             </body>
         </html>
     );
-  }
+}
