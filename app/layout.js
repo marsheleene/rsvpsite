@@ -2,7 +2,7 @@ import keyart from "../images/header_v1.png";
 
 export const metadata = {
     title: "RSVP : le jeu vidéo",
-    description: "RSVP est un jeu d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !"
+    description: "RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !"
 }
 
 export default function RootLayout({ children }) {
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
                 <link rel="canonical" href="https://rsvpgame.com" key="canonical" />
                 <meta name="thumbnail" content={keyart.src} />
                 <meta property="og:title" content="RSVP : le jeu vidéo" />
-                <meta property="og:description" content="RSVP est un jeu d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !" />
+                <meta property="og:description" content="RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !" />
                 <meta property="og:image" content={keyart.src} />
             </head>
             <body>
