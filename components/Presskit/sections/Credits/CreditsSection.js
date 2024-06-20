@@ -1,8 +1,9 @@
+import Item from "../Item";
 import CreditsItem from "./CreditsItem";
 
 function CreditsSection() {
     return (
-        <>
+        <Item title="Crédits">
             <ul>
                 <li>
                     <CreditsItem name="Matthieu Golsenne" roles="Directeur créatif, designer, programmeur" />
@@ -19,7 +20,7 @@ function CreditsSection() {
                     <CreditsItem name="Elizabeth Maler" roles="Producer, designer" />
                 </li>
             </ul>
-        </>
+        </Item>
     );
 }
 

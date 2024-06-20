@@ -1,11 +1,12 @@
 import TeamMember from "./TeamMember";
+import Item from "../Item";
 
 import portraitMatthieu from '../../../../images/opt_portrait_matthieu.webp'
 import portraitZoe from '../../../../images/opt_portrait_zoe.webp'
 
 function TeamSection(props) {
     return (
-        <div class="md:columns-2 md:gap-x-12 xl:gap-x-32 md:flex md:justify-center">
+        <Item title="À propos de la Team RSVP" className="md:columns-2 md:gap-x-12 xl:gap-x-32 md:flex md:justify-center">
             <TeamMember name="Matthieu Golsenne" portrait={portraitMatthieu} linkedIn="https://www.linkedin.com/in/mgolsenne/" className="max-w-xl">
                 <p>Matthieu s’occupe de la programmation et du game design et participe à l’écriture du scénario.
                 </p>
@@ -21,7 +22,7 @@ function TeamSection(props) {
                     </p>
             </TeamMember>
 
-            <TeamMember name="Zoé Bergeret" portrait={portraitZoe} website="https://zoebergeret.fr/" linkedIn="https://www.linkedin.com/in/zoe-bergeret/" className="max-w-xl">
+            <TeamMember name="Zoé Bergeret" portrait={portraitZoe} website="https://zoebergeret.fr/" linkedIn="https://www.linkedin.com/in/zoe-bergeret/" className="mt-8 md:mt-0 max-w-xl">
                 <p>S’occupera de la direction artistique et participera
                     au game design et à l’écriture du scénario.</p>
                 <p class="mt-4">
@@ -38,7 +39,7 @@ function TeamSection(props) {
                     et n’a jamais vu un plan de table (mais dessine
                     super bien).</p>
             </TeamMember>
-        </div>
+        </Item>
     );
 }
 

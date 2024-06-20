@@ -1,19 +1,15 @@
-import Item from "../sections/Item";
+import Separator from "../sections/Separator/Separator";
 import ConceptArtSection from "../sections/ConceptArt/ConceptArtSection";
 import TeamSection from "../sections/Team/TeamSection";
 
 function Bottom() {
     return (
         <>
-            <Item title="Concept arts">
-                <ConceptArtSection />
-            </Item>
+            <ConceptArtSection />
 
-            <p class="my-4"></p>
+            <Separator height={4} />
 
-            <Item title="À propos de la Team RSVP">
-                <TeamSection />
-            </Item>
+            <TeamSection />
         </>
     );
   }

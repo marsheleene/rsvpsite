@@ -1,6 +1,7 @@
 import { useDownload } from "./useDownload";
 import ImageItem from "./ImageItem";
 import Image from "next-export-optimize-images/image";
+import Item from "../Item";
 
 import icon_download from '../../../../images/icon_download.webp';
 import img_concept1_PNG from '../../../../images/concept1.png'
@@ -29,7 +30,7 @@ function ConceptArtSection(props) {
     ];
 
     return (
-        <div className="flex flex-col items-center">
+        <Item title="Concept art" className="flex flex-col items-center">
             <div
                 className="cursor-pointer flex flex-col items-center hover:underline md:p-6 border-2 border-transparent rounded-2xl md:hover:border-[#DDBE71] transition duration-300"
                 onClick={() => handleZip(images, zipName)}
@@ -52,7 +53,7 @@ function ConceptArtSection(props) {
                 <ImageItem className="md:mx-auto w-full md:w-1/2" center src={img_concept4_PNG} display={img_concept4} name="concept4.png" alt="Concept art for the video game RSVP" />
                 <ImageItem className="md:mx-auto w-full md:w-9/12" center src={img_concept2_PNG} display={img_concept2} name="concept2.png" alt="Concept art for the video game RSVP" />
             </div>
-        </div>
+        </Item>
     );
 }
 

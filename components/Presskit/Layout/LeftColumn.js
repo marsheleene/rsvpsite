@@ -8,13 +8,9 @@ function LeftColumn() {
         <>
             <Factsheet />
 
-            <Item title="Crédits">
-                <CreditsSection />
-            </Item>
+            <CreditsSection />
 
-            <Item title="Contacts">
-                <ContactSection />
-            </Item>
+            <ContactSection />
         </>
     );
   }
