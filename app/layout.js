@@ -1,4 +1,5 @@
 import keyart from "../images/header_v1.png";
+import favicon_32 from "./favicon-32.png"
 
 export const metadata = {
     title: "RSVP : le jeu vidéo",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
                 <meta name="robots" content="nofollow" />
                 <meta name="googlebot" content="nofollow" />
                 <link rel="canonical" href="https://rsvpgame.com" key="canonical" />
+                <link rel="icon" type="image/png" href={favicon_32} />
                 <meta name="thumbnail" content={keyart.src} />
                 <meta property="og:title" content="RSVP : le jeu vidéo" />
                 <meta property="og:description" content="RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !" />
