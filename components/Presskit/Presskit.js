@@ -3,11 +3,12 @@ import RightColumn from './Layout/RightColumn';
 import Bottom from './Layout/Bottom';
 import Header from './Layout/Header';
 import Footer from './Layout/Footer';
+import Separator from './sections/Separator/Separator';
 
 function Presskit(props) {
   return (
     <div className={"font-inter " + (props.className && props.className)}>
-      <header>
+      <header className="2xl:mb-10">
         <Header />
       </header>
 

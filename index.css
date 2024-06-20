@@ -26,3 +26,9 @@ div:hover > #icon-download {
     transform: scale(1);
   }
 }
+
+a {
+  color:#B79D60;
+  text-decoration-color: #B79D60;
+  text-decoration-thickness: 2px;
+}

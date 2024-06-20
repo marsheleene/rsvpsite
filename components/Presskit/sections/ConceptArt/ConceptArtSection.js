@@ -32,10 +32,10 @@ function ConceptArtSection(props) {
     return (
         <Item title="Concept art" className="flex flex-col items-center">
             <div
-                className="cursor-pointer flex flex-col items-center hover:underline md:p-6 border-2 border-transparent rounded-2xl md:hover:border-[#DDBE71] transition duration-300"
+                className="cursor-pointer flex flex-col items-center hover:underline decoration-2 decoration-[#B79D60] md:p-6 border-2 border-transparent rounded-2xl md:hover:border-[#B79D60] transition duration-300"
                 onClick={() => handleZip(images, zipName)}
             >
-                <span className="text-center">
+                <span className="text-center text-[#B79D60]">
                     Télécharger toutes les images dans une archive .zip
                 </span>
                 <Image

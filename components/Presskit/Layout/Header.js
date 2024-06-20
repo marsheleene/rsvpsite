@@ -10,7 +10,7 @@ function Header() {
     return (
         <Link href={pathname}>
             <Image 
-                className="mx-auto px-4 mt-4 md:px-8 md:mt-8" 
+                className="mx-auto px-4 w-[1500px] mt-4 md:mt-8" 
                 src={header} 
                 alt="Image d'illustration de RSVP : le jeu vidéo"
                 sizes="(max-width: 768px) 50vw, 100vw"
