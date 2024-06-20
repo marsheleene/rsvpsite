@@ -11,7 +11,7 @@ function DescriptionSection() {
                 <p className="mt-12"><b>RSVP</b> est un jeu PC d'<b>enquête</b> et de <b>puzzle</b> <b>narratif</b> dans lequel vous incarnez
                     un·e wedding planner. Votre spécialité : <b>créer des plans de table parfaits</b> !</p>
 
-                <p className="mt-4">Vous accompagnerez <b>différents membres de la même famille</b> au fil de leur vie et de leurs mariages.
+                <p className="mt-4">Vous accompagnerez <b>différents membres de la même famille</b> au fil de leurs vies et de leurs mariages.
                     En fonction des <b>choix de placements</b> que vous ferez, les affinités des personnages les uns envers les autres vont évoluer, jusqu’à
                     <b> modifier leurs relations</b> et poursuivre leurs arcs narratifs.</p>
                 <p className="mt-4">Essayerez-vous de <b>contenter</b> le plus grand nombre de convives, ou bien allez-vous <b>manipuler</b> leurs relations
