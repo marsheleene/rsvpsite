@@ -54,7 +54,7 @@ function FeaturesSection() {
 
                 <FeatureItem icon={icon_heart1}>
                     Il s’agit également d’un jeu narratif, dans lequel le joueur se place en <b>chef d’orchestre de
-                    l’histoire</b>. C’est elle qui est en charge de <b>la destinée et des dramas</b> de la famille.
+                    l’histoire</b>. C’est lui qui est en charge de <b>la destinée et des dramas</b> de la famille.
                 </FeatureItem>
 
                 <FeatureItem icon={icon_heart3}>
