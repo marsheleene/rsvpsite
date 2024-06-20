@@ -8,7 +8,7 @@ function DescriptionSection() {
                     organiser les plans de table de leurs mariages ! Les marié·e·s auront toujours des instructions précises que vous devez suivre. Pour
                     le reste, libre à vous de satisfaire un maximum de convives, ou de les placer au gré de vos envies... et contempler les conséquences.</p>
 
-                <p className="mt-12"><b>RSVP</b> est un jeu d'<b>enquête</b> et de <b>puzzle</b> <b>narratif</b> dans lequel vous incarnez
+                <p className="mt-12"><b>RSVP</b> est un jeu PC d'<b>enquête</b> et de <b>puzzle</b> <b>narratif</b> dans lequel vous incarnez
                     un·e wedding planner. Votre spécialité : <b>créer des plans de table parfaits</b> !</p>
 
                 <p className="mt-4">Vous accompagnerez <b>différents membres de la même famille</b> au fil de leur vie et de leurs mariages.
