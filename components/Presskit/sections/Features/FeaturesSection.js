@@ -49,7 +49,7 @@ function FeaturesSection() {
 
                 <FeatureItem icon={icon_heart4}>
                     Il s’agit d’<b>un mélange unique de jeu d’enquête et de puzzle</b>, dans lequel le joueur devra trouver
-                    les indices qui lui permettront de déduire quels placements rempliront <b>les contraintes</b>.
+                    les indices qui lui permettront de déduire quels placements rempliront <b>les contraintes</b> du mariage.
                 </FeatureItem>
 
                 <FeatureItem icon={icon_heart1}>
