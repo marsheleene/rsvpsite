@@ -7,7 +7,7 @@ import iconWebsite from '../../../../images/logo_website.webp';
 function TeamMember(props) {
   let linkedIn;
   if (props.linkedIn) {
-    linkedIn =  <li class="mr-1"><Link href={props.linkedIn} target="_blank"> <Image src={iconLinkedIn} alt="LinkedIn Icon" className="max-w-16 md:max-w-8" /> </Link></li>;
+    linkedIn = <li class="mr-1"><Link href={props.linkedIn} target="_blank"> <Image src={iconLinkedIn} alt="LinkedIn Icon" className="max-w-16 md:max-w-8" /> </Link></li>;
   }
   let website;
   if (props.website) {
