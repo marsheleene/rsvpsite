@@ -16,7 +16,7 @@ function Factsheet() {
 
             <FactsheetItem title="Date de sortie :">
                 <div>
-                    TBD
+                    À déterminer
                 </div>
             </FactsheetItem>
 
