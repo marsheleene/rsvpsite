@@ -14,7 +14,7 @@ function Factsheet() {
                 </div>
             </FactsheetItem>
 
-            <FactsheetItem title="Durée de vie indicative :">
+            <FactsheetItem title="Durée indicative :">
                 <div>
                     3 à 4 heures
                 </div>
@@ -28,14 +28,8 @@ function Factsheet() {
 
             <FactsheetItem title="Edition :">
                 <h3>
-                    Autoédition
+                    Auto-édition
                 </h3>
-            </FactsheetItem>
-
-            <FactsheetItem title="Date de sortie :">
-                <div>
-                    À déterminer
-                </div>
             </FactsheetItem>
 
             <FactsheetItem title="Plateformes :">
@@ -44,9 +38,9 @@ function Factsheet() {
                 </div>
             </FactsheetItem>
 
-            <FactsheetItem title="Site web :">
+            <FactsheetItem title="Date de sortie :">
                 <div>
-                    <Link href="https://www.rsvpgame.com" target="_blank" className="hover:underline">https://rsvpgame.com</Link>
+                    When it's done
                 </div>
             </FactsheetItem>
         </article>
