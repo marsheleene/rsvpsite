@@ -26,6 +26,12 @@ function Factsheet() {
                 </div>
             </FactsheetItem>
 
+            <FactsheetItem title="Durée de vie indicative :">
+                <div>
+                    3 à 4 heures
+                </div>
+            </FactsheetItem>
+
             <FactsheetItem title="Site web :">
                 <div>
                     <Link href="https://www.rsvpgame.com" target="_blank" className="hover:underline">https://rsvpgame.com</Link>

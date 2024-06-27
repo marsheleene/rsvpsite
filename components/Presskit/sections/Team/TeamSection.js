@@ -32,7 +32,7 @@ function TeamSection(props) {
                     Illustratrice et graphiste diplômée à Cepreco en 2020, Zoé a d’abord travaillé en tant que créatrice d’objets 
                     publicitaires. En 2021, elle décide de réaliser son rêve en rejoignant l’industrie du jeu vidéo en tant que marketing 
                     artist. Elle a notamment collaboré à <em>The Last Spell</em>, <em>Lakeburg Legacies</em> ou encore <em>Worlds of Aria</em>. 
-                    Elle mène activité d’artiste indépendante en parallèle.
+                    Elle mène une activité d’artiste indépendante en parallèle.
                 </p>
 
                 <p class="mt-4">
