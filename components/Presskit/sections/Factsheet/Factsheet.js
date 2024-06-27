@@ -5,7 +5,7 @@ function Factsheet() {
     return (
         <article>
             <h1 class="my-8 text-center font-coquette text-3xl">
-            Factsheet
+                Factsheet
             </h1>
 
             <FactsheetItem title="Genre :">
