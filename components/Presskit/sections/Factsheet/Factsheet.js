@@ -8,6 +8,18 @@ function Factsheet() {
             Factsheet
             </h1>
 
+            <FactsheetItem title="Genre :">
+                <div>
+                    Puzzle & enquête
+                </div>
+            </FactsheetItem>
+
+            <FactsheetItem title="Durée de vie indicative :">
+                <div>
+                    3 à 4 heures
+                </div>
+            </FactsheetItem>
+
             <FactsheetItem title="Developpeur :">
                 <h3>
                     Team RSVP
@@ -23,12 +35,6 @@ function Factsheet() {
             <FactsheetItem title="Plateformes :">
                 <div>
                     PC
-                </div>
-            </FactsheetItem>
-
-            <FactsheetItem title="Durée de vie indicative :">
-                <div>
-                    3 à 4 heures
                 </div>
             </FactsheetItem>
 
