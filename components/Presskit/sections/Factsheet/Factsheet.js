@@ -26,6 +26,12 @@ function Factsheet() {
                 </h3>
             </FactsheetItem>
 
+            <FactsheetItem title="Edition :">
+                <h3>
+                    Autoédition
+                </h3>
+            </FactsheetItem>
+
             <FactsheetItem title="Date de sortie :">
                 <div>
                     À déterminer
