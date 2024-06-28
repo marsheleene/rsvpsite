@@ -7,7 +7,9 @@ export default function sitemap() {
         lastModified: new Date(),
         priority: 1,
         images: [
-          {url: {keyart}}
+          {
+            loc: {keyart}
+          }
         ]
       }
     ]
