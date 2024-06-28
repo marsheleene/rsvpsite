@@ -8,5 +8,11 @@
         <image:image>
             <image:loc>https://rsvpgame.com/_next/static/chunks/images/_next/static/media/opt_header_v1.4d691438_1920.webp</image:loc>
         </image:image>
+        <image:image>
+            <image:loc>https://rsvpgame.com/_next/static/chunks/images/_next/static/media/opt_portrait_matthieu.78722f4a_1080.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://rsvpgame.com/_next/static/chunks/images/_next/static/media/opt_portrait_zoe.a23b7d7f_828.webp</image:loc>
+        </image:image>
     </url>
 </urlset>
