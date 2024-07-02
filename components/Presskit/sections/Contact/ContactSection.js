@@ -6,10 +6,7 @@ function ContactSection() {
         <Item title="Contacts">
             <ul>
                 <li>
-                    <ContactItem title="Business" contact="mailto:contact@rsvpgame.com" contactDisplay="contact@rsvpgame.com" />
-                </li>
-                <li class="mt-4">
-                    <ContactItem title="Presse" contact="mailto:contact@rsvpgame.com" contactDisplay="contact@rsvpgame.com" />
+                    <ContactItem title="Pour toute demande d'information" contact="mailto:contact@rsvpgame.com" contactDisplay="contact@rsvpgame.com" />
                 </li>
             </ul>
         </Item>

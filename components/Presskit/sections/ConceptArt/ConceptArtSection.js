@@ -1,3 +1,5 @@
+'use client';
+
 import { useDownload } from "./useDownload";
 import ImageItem from "./ImageItem";
 import Image from "next-export-optimize-images/image";

@@ -1,14 +1,11 @@
 import Link from "next/link";
 import Image from "next-export-optimize-images/image";
 
-import { usePathname } from 'next/navigation'
-
-import header from "../../../images/opt_header_v1.webp";
+import header from "../../images/opt_header_v1.webp";
 
 function Header() {
-    const pathname = usePathname();
     return (
-        <Link href={pathname}>
+        <Link href="https://rsvpgame.com">
             <Image 
                 className="mx-auto px-4 w-[1500px] mt-4 md:mt-8" 
                 src={header} 

@@ -1,9 +1,25 @@
+import MainLayout from "../components/Layout/MainLayout";
 import keyart from "../images/header_v1.png";
 
 export const metadata = {
     title: "RSVP : le jeu vidéo",
     description: "RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !"
 }
+
+import background from "../images/background.jpg";
+
+import { Inter } from 'next/font/google'
+import localFont from 'next/font/local';
+
+const fontCoquette = localFont({
+    src: '../fonts/Coquette Regular Regular.ttf',
+    variable: '--font-coquette'
+});
+
+const fontInter = Inter({
+    subsets: ['latin'],
+    variable: '--font-inter'
+});
 
 export default function RootLayout({ children }) {
     return (
@@ -17,8 +33,12 @@ export default function RootLayout({ children }) {
                 <meta property="og:description" content="RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !" />
                 <meta property="og:image" content={keyart.src} />
             </head>
-            <body>
-                <div id="root">{children}</div>
+            <body style={{'--image-url': `url(${background.src})`}} className={`${fontInter.variable} ${fontCoquette.variable}` + " font-inter bg-[image:var(--image-url)]"}>
+                <div id="root">
+                    <MainLayout>
+                        {children}
+                    </MainLayout>
+                </div>
             </body>
         </html>
     );

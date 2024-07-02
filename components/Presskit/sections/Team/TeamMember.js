@@ -26,7 +26,7 @@ function TeamMember(props) {
         {linkedIn && linkedIn}
         {website && website}
       </ul>
-      <div class="mt-4">
+      <div class="mt-4 border-2 rounded-2xl border-borderColor bg-white p-6">
         {props.children}
       </div>
     </div>

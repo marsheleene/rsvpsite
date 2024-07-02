@@ -3,36 +3,51 @@
 @tailwind utilities;
 
 :root {
-  --link-color: #B79D60;
+    --link-color: #B79D60;
+    --main-color: #B79D60;
+    --secondary-color: #f7f2e6;
 }
 
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .column-span-all {
-  column-span: all;
+    column-span: all;
 }
 
 .my-drop-shadow:hover {
-  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.15)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.3));
+    filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.15)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.3));
 }
 
 
-div:hover > #icon-download {
-  transform: scale(1.5);
+div:hover>#icon-download {
+    transform: scale(1.5);
 }
 
 @media (max-width: 768px) {
-  #download-button:hover #icon-download {
-    transform: scale(1);
-  }
+    #download-button:hover #icon-download {
+        transform: scale(1);
+    }
 }
 
 a {
-  color: var(--link-color);
-  text-decoration-color: var(--link-color);
-  text-decoration-thickness: 2px;
+    color: var(--link-color);
+    text-decoration-color: var(--link-color);
+    text-decoration-thickness: 2px;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
 }
