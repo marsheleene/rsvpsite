@@ -1,11 +1,6 @@
 import MainLayout from "../components/Layout/MainLayout";
 import keyart from "../images/header_v1.png";
 
-export const metadata = {
-    title: "RSVP : le jeu vidéo",
-    description: "RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !"
-}
-
 import background from "../images/background.jpg";
 
 import { Inter } from 'next/font/google'
@@ -20,6 +15,13 @@ const fontInter = Inter({
     subsets: ['latin'],
     variable: '--font-inter'
 });
+
+
+export const metadata = {
+    title: "RSVP : le jeu vidéo",
+    description: "RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !"
+}
+
 
 export default function RootLayout({ children }) {
     return (
