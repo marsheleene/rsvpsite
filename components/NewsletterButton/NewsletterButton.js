@@ -6,7 +6,7 @@ import buttonImg from "../../images/button-white.png";
 export default function NewsletterButton(props) {
     const router = useRouter();
 
-    let className = "flex"
+    let className = "flex hidden"
     if (props.className) {
         className += " " + props.className;
     }
