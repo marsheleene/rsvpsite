@@ -13,7 +13,7 @@ function Header() {
                 sizes="(max-width: 768px) 50vw, 100vw"
                 quality={100}
                 priority
-                placeHolder="blur"
+                placeholder="blur"
             />
         </Link>
     );

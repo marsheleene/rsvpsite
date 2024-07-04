@@ -2,7 +2,7 @@ import Separator from "../sections/Separator/Separator";
 import ConceptArtSection from "../sections/ConceptArt/ConceptArtSection";
 import TeamSection from "../sections/Team/TeamSection";
 import HistorySection from "../sections/History/HistorySection";
-import NewsletterModal from "../../NewsletterModal/NewsletterModal";
+import NewsletterButton from "../../NewsletterButton/NewsletterButton";
 import CNC from "../sections/CNC/CNC";
 
 function Bottom() {
@@ -20,7 +20,7 @@ function Bottom() {
 
             <Separator height={12} />
 
-            <NewsletterModal className="m-auto" />
+            <NewsletterButton className="m-auto" />
 
             <Separator height={12} />
 

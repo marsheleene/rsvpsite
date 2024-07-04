@@ -1,7 +1,7 @@
 function FactsheetItem(props) {
     return (
-        <section class="factsheet-item mt-4 text-left">
-            <h2 class="font-semibold">{props.title}</h2>
+        <section className="factsheet-item mt-4 text-left">
+            <h2 className="font-semibold">{props.title}</h2>
             <div>
                 {props.children}
             </div>

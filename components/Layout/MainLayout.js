@@ -1,31 +1,27 @@
 import "../../index.css";
 
-import { ReCaptchaProvider } from "next-recaptcha-v3";
-
 import Header from './Header';
 import Footer from './Footer';
 
 
 export default function MainLayout(props) {
-  return (
-    
-    <ReCaptchaProvider>
-      <div className={props.className}>
-        <header className="2xl:mb-10">
-          <Header />
-        </header>
+    return (
 
-        <main class="mx-6 md:mx-20 2xl:mx-80">
+        <div className={props.className}>
+            <header className="2xl:mb-10">
+                <Header />
+            </header>
 
-          {props.children}
+            <main className="mx-6 md:mx-20 2xl:mx-80">
 
-        </main>
-        
-        <footer class="mb-10">
-          <Footer />
-        </footer>
+                {props.children}
 
-      </div>
-    </ReCaptchaProvider>
-  );
+            </main>
+
+            <footer className="mb-10">
+                <Footer />
+            </footer>
+
+        </div>
+    );
 }

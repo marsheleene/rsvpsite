@@ -1,5 +1,10 @@
- import Presskit from "../components/Presskit/Presskit"
+import MainLayout from "../components/Layout/MainLayout"
+import Presskit from "../components/Presskit/Presskit"
 
 export default function Page() {
-    return <Presskit />
+    return (
+        <MainLayout>
+            <Presskit />
+        </MainLayout>
+    );
 }

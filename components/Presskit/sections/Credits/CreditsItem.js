@@ -1,8 +1,8 @@
 function CreditsItem(props) {
     return (
-        <div class="break-inside-avoid-column text-left">
-            <div class="font-semibold">{props.name}</div>
-            <div class="">{props.roles}</div>
+        <div className="break-inside-avoid-column text-left">
+            <div className="font-semibold">{props.name}</div>
+            <div className="">{props.roles}</div>
         </div>
     );
 }

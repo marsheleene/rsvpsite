@@ -1,0 +1,27 @@
+.ml-error input,
+.ml-error textarea,
+.ml-error select {
+    border-color: red !important;
+}
+
+.ml-error .custom-checkbox-radio-list {
+    border: 1px solid red !important;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.ml-error .label-description,
+.ml-error .label-description p,
+.ml-error .label-description p a,
+.ml-error label:first-child {
+    color: #ff0000 !important;
+}
+
+.ml-form-checkboxRow.ml-error .label-description p,
+.ml-form-checkboxRow.ml-error .label-description p:first-letter {
+    color: #ff0000 !important;
+}
+
+.ml-form-recaptcha.ml-error iframe {
+    border: solid 1px #ff0000;
+}

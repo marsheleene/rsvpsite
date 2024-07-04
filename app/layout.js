@@ -1,6 +1,4 @@
-import MainLayout from "../components/Layout/MainLayout";
 import keyart from "../images/header_v1.png";
-
 import background from "../images/background.jpg";
 
 import { Inter } from 'next/font/google'
@@ -37,9 +35,7 @@ export default function RootLayout({ children }) {
             </head>
             <body style={{'--image-url': `url(${background.src})`}} className={`${fontInter.variable} ${fontCoquette.variable}` + " font-inter bg-[image:var(--image-url)] text-mainColor"}>
                 <div id="root">
-                    <MainLayout>
-                        {children}
-                    </MainLayout>
+                    {children}
                 </div>
             </body>
         </html>

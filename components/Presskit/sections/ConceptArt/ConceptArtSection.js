@@ -48,7 +48,7 @@ function ConceptArtSection(props) {
                 />
             </div>
 
-            <div class="md:columns-2 mt-8">
+            <div className="md:columns-2 mt-8">
                 <ImageItem className="md:mx-auto w-full 2xl:w-9/12" center large src={img_concept5_PNG} display={img_concept5} name="concept5.png" alt="Concept art for the video game RSVP" />
                 <ImageItem className="md:mx-auto md:mr-2 w-full 2xl:w-9/12" src={img_concept1_PNG} display={img_concept1} name="concept1.png" alt="Concept art for the video game RSVP" />
                 <ImageItem className="md:mx-auto md:ml-2 w-full 2xl:w-9/12" src={img_concept3_PNG} display={img_concept3} name="concept3.png" alt="Concept art for the video game RSVP" />
