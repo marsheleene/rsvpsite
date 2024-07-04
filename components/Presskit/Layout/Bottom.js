@@ -20,7 +20,7 @@ function Bottom() {
 
             <Separator height={12} />
 
-            <NewsletterModal className="hidden m-auto" />
+            <NewsletterModal className="m-auto" />
 
             <Separator height={12} />
 

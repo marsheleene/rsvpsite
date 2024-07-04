@@ -8,7 +8,7 @@ function Presskit(props) {
     return (
         <div class="md:grid grid-cols-3 gap-10">
 
-            <div class="hidden mt-6 md:mt-0 col-span-3">
+            <div class="mt-6 md:mt-0 col-span-3">
                 <NewsletterModal className="flex justify-center" />
             </div>
 
