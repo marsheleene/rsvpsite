@@ -2,7 +2,7 @@
 
 import "./NewsletterForm.css";
 
-import React from 'react';
+import React, { useState } from 'react';
 import Script from "next/script";
 import Link from "next/link";
 import { useRouter } from 'next/navigation'
@@ -49,10 +49,8 @@ export default function NewsletterForm() {
         const script = document.createElement("script");
         script.src = 'https://www.google.com/recaptcha/api.js';
         script.async = true;
-        console.log("mount")
         document.body.appendChild(script);
         return () => {
-            console.log("unmount")
             document.body.removeChild(script);
         }
     }, []);
@@ -99,34 +97,35 @@ export default function NewsletterForm() {
                                     </label>
                                 </div>
 
-                                <div className="grid sm:grid-rows-2 gap-4 my-4">
-                                    <div className="ml-field-email ml-validate-email ml-validate-required">
-                                        <input className="w-full p-2 border-2 rounded-2xl border-borderColor hover:border-mainColor focus:border-mainColor focus:outline-none focus:ring-0"
+                                <div className="my-4 flex flex-col items-center">
+                                    <div className="w-full flex flex-row justify-center items-center ml-field-email ml-validate-email ml-validate-required">
+                                        <input className="w-7/12 p-2 border-2 rounded-2xl border-borderColor hover:border-mainColor focus:border-mainColor focus:outline-none focus:ring-0"
                                             aria-label="email"
                                             aria-required="true"
                                             type="email"
                                             data-inputmask=""
                                             name="fields[email]"
-                                            placeholder="E-mail"
+                                            placeholder="E-mail (obligatoire)"
                                             autoComplete="email"
-                                            required />
+                                            required
+                                        />
+                                        <span className="ml-2 text-linkColor font-bold text-xl">*</span>
                                     </div>
-                                    <div className="grid sm:grid-cols-2 gap-4 sm:gap-8">
-                                        <div>
-                                            <input
-                                                className="w-full p-2 border-2 rounded-2xl border-borderColor hover:border-mainColor focus:border-mainColor focus:outline-none focus:ring-0"
-                                                aria-label="name" type="text" data-inputmask="" name="fields[name]" placeholder="Prénom" autoComplete="given-name" />
-                                        </div>
-                                        <div>
-                                            <input
-                                                className="w-full p-2 border-2 rounded-2xl border-borderColor hover:border-mainColor focus:border-mainColor focus:outline-none focus:ring-0"
-                                                aria-label="last_name" type="text" data-inputmask="" name="fields[last_name]" placeholder="Nom" autoComplete="family-name" />
-                                        </div>
+                                    <div className="w-full flex flex-row justify-center items-center mt-4">
+                                        <input className="w-7/12 p-2 border-2 rounded-2xl border-borderColor hover:border-mainColor focus:border-mainColor focus:outline-none focus:ring-0"
+                                            aria-label="name"
+                                            type="text"
+                                            data-inputmask=""
+                                            name="fields[name]"
+                                            placeholder="Nom ou pseudonyme (optionnel)"
+                                            autoComplete="given-name"
+                                        />
+                                        <span className="ml-5 text-linkColor font-bold text-xl"> </span>
                                     </div>
                                 </div>
                                 <div className="mt-6 text-sm">
-                                    En cliquant ci-dessous pour soumettre ce formulaire, vous reconnaissez que les informations que vous fournissez seront traitées conformément 
-                                    à notre <Link href="https://rsvpgame.com/privacy" target="_blank" className="hover:underline">politique de confidentialité</Link>. 
+                                    En cliquant ci-dessous pour soumettre ce formulaire, vous reconnaissez que les informations que vous fournissez seront traitées conformément
+                                    à notre <Link href="https://rsvpgame.com/privacy" target="_blank" className="hover:underline">politique de confidentialité</Link>.
                                     Vous pouvez vous désinscrire à n'importe quel moment par le lien situé en bas de la newsletter.
                                 </div>
 

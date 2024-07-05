@@ -5,6 +5,7 @@ import favicon from "./favicon-32.png";
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local';
 
+
 const fontCoquette = localFont({
     src: '../fonts/Coquette Regular Regular.ttf',
     variable: '--font-coquette'
@@ -53,6 +54,7 @@ export const metadata = {
 
 
 export default function RootLayout({ children }) {
+
     return (
         <html lang="fr">
             <head>
