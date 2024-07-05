@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation'
 
 import Image from "next-export-optimize-images/image";
 import newsletter from "../../images/newsletter.png";
-import subscribed from "../../images/subscribed.png";
+import mail from "../../images/mail.png";
 import background from "../../images/background.jpg";
 import closeIcon from "../../images/close.png";
 
@@ -49,12 +49,14 @@ export default function NewsletterForm() {
         const script = document.createElement("script");
         script.src = 'https://www.google.com/recaptcha/api.js';
         script.async = true;
+        console.log("mount")
         document.body.appendChild(script);
         return () => {
-          document.body.removeChild(script);
+            console.log("unmount")
+            document.body.removeChild(script);
         }
     }, []);
-    
+
     return (
         <>
             <button onClick={() => router.push('/')} className="absolute right-0 top-0 mt-4 mr-4 hover:scale-125 scale-100 transition duration-300">
@@ -166,9 +168,9 @@ export default function NewsletterForm() {
 
                     <div ref={successBlockRef} className="ml-block-success flex flex-col items-center" style={{ display: "none" }}>
                         <Image
-                            src={subscribed}
+                            src={mail}
                             alt="Une illutration d'un carton RSVP avec la réponse 'oui' cochée"
-                            className="sm:max-w-[500px]"
+                            className="sm:max-w-[380px]"
                         />
                         <p className="text-center">Un e-mail de confirmation vient d'être envoyé sur l'adresse que vous avez indiquée.</p>
                         <button className="mt-6 p-3 rounded-2xl border-2 border-linkColor bg-white hover:bg-linkColor text-xl hover:text-white"
