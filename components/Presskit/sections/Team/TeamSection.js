@@ -7,7 +7,7 @@ import portraitZoe from '../../../../images/opt_portrait_zoe.webp'
 function TeamSection(props) {
     return (
         <Item title="À propos de la Team RSVP" className="md:grid md:grid-cols-2 md:gap-x-12 xl:gap-x-32 flex flex-col md:flex-row items-center md:items-start md:justify-center">
-            <TeamMember name="Matthieu Golsenne" portrait={portraitMatthieu} linkedIn="https://www.linkedin.com/in/mgolsenne/" className="max-w-xl">
+            <TeamMember name="Matthieu Golsenne" portrait={portraitMatthieu} linkedIn="https://www.linkedin.com/in/mgolsenne/" className="place-self-end max-w-xl">
                 <p>
                     Matthieu s’occupe de la programmation et du game design et participe à l’écriture du scénario.
                 </p>
@@ -24,7 +24,7 @@ function TeamSection(props) {
                 </p>
             </TeamMember>
 
-            <TeamMember name="Zoé Bergeret" portrait={portraitZoe} website="https://zoebergeret.fr/" linkedIn="https://www.linkedin.com/in/zoe-bergeret/" className="mt-8 md:mt-0 max-w-xl">
+            <TeamMember name="Zoé Bergeret" portrait={portraitZoe} website="https://zoebergeret.fr/" linkedIn="https://www.linkedin.com/in/zoe-bergeret/" className="place-self-start mt-8 md:mt-0 max-w-xl">
                 <p>
                     Zoé s’occupe de la direction artistique et participe au game design ainsi qu'à l’écriture du scénario.
                 </p>
