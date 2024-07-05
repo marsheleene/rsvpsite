@@ -32,7 +32,12 @@ export default function RootLayout({ children }) {
                 <meta property="og:title" content="RSVP : le jeu vidéo" />
                 <meta property="og:description" content="RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !" />
                 <meta property="og:image" content={keyart.src} />
-                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                <meta content="summary_large_image" name="twitter:card" />
+                <meta name="twitter:title" content="SVP : le jeu vidéo" />
+                <meta name="twitter:description" content="RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !" />
+                <meta property="twitter:image" content={keyart.src} />
+                <meta name="twitter:url" content="https://rsvpgame.com" />
+                <meta property="twitter:creator" content="Team RSVP" />
             </head>
             <body style={{'--image-url': `url(${background.src})`}} className={`${fontInter.variable} ${fontCoquette.variable}` + " font-inter bg-[image:var(--image-url)] text-mainColor"}>
                 <div id="root">
