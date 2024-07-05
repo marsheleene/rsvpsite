@@ -2,7 +2,7 @@
 
 import "./NewsletterForm.css";
 
-import React, { useState } from 'react';
+import React from "react";
 import Script from "next/script";
 import Link from "next/link";
 import { useRouter } from 'next/navigation'
