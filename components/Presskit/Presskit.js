@@ -13,7 +13,7 @@ function Presskit(props) {
                 <NewsletterButton className="flex justify-center" />
             </div>
 
-            <div className="hidden md:flex md:flex-col md:place-self-end md:mr-20 col-span-1 break-inside-avoid-column mb-10">
+            <div className="hidden md:flex md:flex-col md:place-self-end md:align-self-start md:mr-20 col-span-1 break-inside-avoid-column mb-10">
                 <LeftColumn />
             </div>
 
