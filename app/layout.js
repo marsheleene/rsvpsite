@@ -1,5 +1,4 @@
 import keyart from "../images/header_v1.png";
-import keyartCropped from "../images/header-cropped.jpg";
 import background from "../images/background.jpg";
 
 import { Inter } from 'next/font/google'
@@ -18,7 +17,8 @@ const fontInter = Inter({
 
 export const metadata = {
     title: "RSVP : le jeu vidéo",
-    description: "RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !"
+    description: "RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !",
+    metadataBase: new URL("https://rsvpgame.com/")
 }
 
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
                 <meta name="robots" content="nofollow" />
                 <meta name="googlebot" content="nofollow" />
                 <link rel="canonical" href="https://rsvpgame.com" key="canonical" />
-                <meta name="thumbnail" content={keyartCropped.src} />
+                <meta name="thumbnail" content={keyart.src} />
                 <meta property="og:title" content="RSVP : le jeu vidéo" />
                 <meta property="og:description" content="RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !" />
                 <meta content="summary_large_image" name="twitter:card" />
