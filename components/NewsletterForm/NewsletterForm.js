@@ -45,6 +45,16 @@ export default function NewsletterForm() {
         }
     }
 
+    React.useEffect(() => {
+        const script = document.createElement("script");
+        script.src = 'https://www.google.com/recaptcha/api.js';
+        script.async = true;
+        document.body.appendChild(script);
+        return () => {
+          document.body.removeChild(script);
+        }
+    }, []);
+    
     return (
         <>
             <button onClick={() => router.push('/')} className="absolute right-0 top-0 mt-4 mr-4 hover:scale-125 scale-100 transition duration-300">
@@ -112,10 +122,27 @@ export default function NewsletterForm() {
                                     En cliquant ci-dessous pour soumettre ce formulaire, vous reconnaissez que les informations que vous fournissez seront traitées conformément à notre <Link href="https://rsvpgame.com/privacy" target="_blank" className="hover:underline">politique de confidentialité</Link>. Vous pouvez vous désinscrire à n'importe quel moment par le lien situé en bas de la newsletter.
                                 </div>
 
-                                
+
+
+
+
+
+
+
+
                                 <div className="mt-6 ml-form-recaptcha ml-validate-required">
-                                    <div className="g-recaptcha flex flex-row justify-content" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
+                                    <div id="recaptcha" className="g-recaptcha flex flex-row justify-center" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
                                 </div>
+
+
+
+
+
+
+
+
+
+
 
 
                                 <input type="hidden" name="ml-submit" value="1" />
@@ -152,7 +179,6 @@ export default function NewsletterForm() {
                     </div>
                 </div>
             </div>
-            <Script src="https://www.google.com/recaptcha/api.js" />
             <Script src="https://groot.mailerlite.com/js/w/webforms.min.js?v2d8fb22bb5b3677f161552cd9e774127" />
             <Script>
                 {
