@@ -1,4 +1,5 @@
-import ClearLayout from "../../components/Layout/ClearLayout"
+import ClearLayout from "../../components/Layout/ClearLayout";
+import MainLayout from "../../components/Layout/MainLayout";
 import NewsletterForm from "../../components/NewsletterForm/NewsletterForm"
 import newsletter_PNG from "../../images/newsletter.png";
 
@@ -21,8 +22,8 @@ export const metadata = {
 
 export default function Page() {
     return (
-        <ClearLayout>
+        <MainLayout>
             <NewsletterForm />
-        </ClearLayout>
+        </MainLayout>
     );
 }

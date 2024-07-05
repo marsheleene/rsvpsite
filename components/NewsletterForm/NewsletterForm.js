@@ -5,14 +5,12 @@ import "./NewsletterForm.css";
 import React from "react";
 import Script from "next/script";
 import Link from "next/link";
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 
 import Image from "next-export-optimize-images/image";
 import newsletter from "../../images/newsletter.webp";
 import mail from "../../images/rsvp-mail.webp";
 import background from "../../images/background.webp";
-import closeIcon from "../../images/close.webp";
-
 
 export default function NewsletterForm() {
 
@@ -57,18 +55,11 @@ export default function NewsletterForm() {
 
     return (
         <>
-            <button onClick={() => router.push('/')} className="absolute right-0 top-0 mt-4 mr-4 hover:scale-125 scale-100 transition duration-300">
-                <Image
-                    src={closeIcon}
-                    alt="Une icône de coeur avec une croix dedans"
-                    className="max-w-12" />
-            </button>
-
             <div id="mlb2-16090758"
                 className="flex flex-row justify-center font-inter ml-form-embedContainer ml-subscribe-form ml-subscribe-form-16090758 rounded-3xl p-8 bg-[image:var(--image-url)]"
                 style={{ '--image-url': `url(${background.src})` }}
             >
-                <div className="sm:max-w-[800px]">
+                <div className="sm:max-w-[800px]" id="newsletter">
                     <div ref={formBlockRef} className="row-form ml-block-form">
                         <div className="flex flex-col items-center">
                             <Image
