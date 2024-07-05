@@ -24,7 +24,12 @@ export const metadata = {
     metadataBase: new URL("https://rsvpgame.com/"),
     openGraph: {
         title: titlePage,
-        description: descriptionPage
+        description: descriptionPage,
+        images: [
+            {
+                url: keyart.src
+            }
+        ]
     },
     twitter: {
         title: titlePage,
