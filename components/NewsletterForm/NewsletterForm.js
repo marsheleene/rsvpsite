@@ -90,7 +90,7 @@ export default function NewsletterForm() {
 
                                 <div className="my-4 flex flex-col items-center">
                                     <div className="w-full flex flex-row justify-center items-center ml-field-email ml-validate-email ml-validate-required">
-                                        <input className="w-7/12 p-2 border-2 rounded-2xl border-borderColor hover:border-mainColor focus:border-mainColor focus:outline-none focus:ring-0"
+                                        <input className="w-full md:w-7/12 p-2 border-2 rounded-2xl border-borderColor hover:border-mainColor focus:border-mainColor focus:outline-none focus:ring-0"
                                             aria-label="email"
                                             aria-required="true"
                                             type="email"
@@ -103,7 +103,7 @@ export default function NewsletterForm() {
                                         <span className="ml-2 text-linkColor font-bold text-xl">*</span>
                                     </div>
                                     <div className="w-full flex flex-row justify-center items-center mt-4">
-                                        <input className="w-7/12 p-2 border-2 rounded-2xl border-borderColor hover:border-mainColor focus:border-mainColor focus:outline-none focus:ring-0"
+                                        <input className="w-full md:w-7/12 p-2 border-2 rounded-2xl border-borderColor hover:border-mainColor focus:border-mainColor focus:outline-none focus:ring-0"
                                             aria-label="name"
                                             type="text"
                                             data-inputmask=""
