@@ -1,5 +1,6 @@
 import keyart from "../images/header_v1.png";
 import background from "../images/background.jpg";
+import favicon from "./favicon-32.png";
 
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local';
@@ -22,6 +23,9 @@ export const metadata = {
     title: titlePage,
     description: descriptionPage,
     metadataBase: new URL("https://rsvpgame.com/"),
+    alternates: {
+        canonical: '/'
+    },
     openGraph: {
         title: titlePage,
         description: descriptionPage,
@@ -29,13 +33,21 @@ export const metadata = {
             {
                 url: keyart.src
             }
-        ]
+        ],
+        url: "https://rsvpgame.com",
+        siteName: titlePage,
+        locale: "fr_FR",
+        type: "website"
     },
     twitter: {
         title: titlePage,
         description: descriptionPage,
         url: "https://rsvpgame.com",
-        creator: "Team RSVP"
+        creator: "Team RSVP",
+        card: 'summary_large_image',
+    },
+    icons: {
+        icon: favicon.src
     }
 }
 
@@ -46,11 +58,8 @@ export default function RootLayout({ children }) {
             <head>
                 <meta name="robots" content="nofollow" />
                 <meta name="googlebot" content="nofollow" />
-                <link rel="canonical" href="https://rsvpgame.com" key="canonical" />
-                <meta name="thumbnail" content={keyart.src} />
-                <meta content="summary_large_image" name="twitter:card" />
             </head>
-            <body style={{'--image-url': `url(${background.src})`}} className={`${fontInter.variable} ${fontCoquette.variable}` + " font-inter bg-[image:var(--image-url)] text-mainColor"}>
+            <body style={{ '--image-url': `url(${background.src})` }} className={`${fontInter.variable} ${fontCoquette.variable}` + " font-inter bg-[image:var(--image-url)] text-mainColor"}>
                 <div id="root">
                     {children}
                 </div>
