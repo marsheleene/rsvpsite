@@ -37,7 +37,7 @@ function Factsheet() {
 
             <FactsheetItem title="Date de sortie :">
                 <div>
-                    When it's done
+                    Quand ça sera terminé !
                 </div>
             </FactsheetItem>
         </Item>
