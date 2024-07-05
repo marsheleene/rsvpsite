@@ -8,10 +8,10 @@ import Link from "next/link";
 import { useRouter } from 'next/navigation'
 
 import Image from "next-export-optimize-images/image";
-import newsletter from "../../images/newsletter.png";
-import mail from "../../images/mail.png";
-import background from "../../images/background.jpg";
-import closeIcon from "../../images/close.png";
+import newsletter from "../../images/newsletter.webp";
+import mail from "../../images/rsvp-mail.webp";
+import background from "../../images/background.webp";
+import closeIcon from "../../images/close.webp";
 
 
 export default function NewsletterForm() {
@@ -77,7 +77,9 @@ export default function NewsletterForm() {
                                 src={newsletter}
                                 alt="Une illustration d'une newsletter dans une enveloppe avec des fleurs et des coeurs"
                                 className="max-w-[300px] sm:max-w-[500px]" />
-                            <p className="text-center text-xl mt-4 font-bold text-linkColor max-w-[700px]">Inscrivez-vous pour obtenir les dernières informations sur le développement du jeu !</p>
+                            <p className="text-center text-xl mt-4 font-bold text-linkColor max-w-[700px]">
+                                Inscrivez-vous pour obtenir les dernières informations sur le développement du jeu !
+                            </p>
                         </div>
 
                         <form
@@ -88,7 +90,9 @@ export default function NewsletterForm() {
                             <div className="ml-form-formContent">
 
                                 <div className="flex flex-col items-center mt-6">
-                                    <div className="text-center sm:max-w-[400px]">Consentez-vous à vous inscrire à notre newsletter et à recevoir de temps en temps de nos nouvelles ?</div>
+                                    <div className="text-center sm:max-w-[400px]">
+                                        Consentez-vous à vous inscrire à notre newsletter et à recevoir de temps en temps de nos nouvelles ?
+                                    </div>
                                     <label className="flex flex-row justify-center items-center cursor-pointer mt-2 ml-validate-required">
                                         <input className="mr-2 customCB" type="checkbox" name="gdpr[]" value="Email" required />
                                         <div className="label-description font-bold">Oui je le veux</div>
@@ -121,31 +125,14 @@ export default function NewsletterForm() {
                                     </div>
                                 </div>
                                 <div className="mt-6 text-sm">
-                                    En cliquant ci-dessous pour soumettre ce formulaire, vous reconnaissez que les informations que vous fournissez seront traitées conformément à notre <Link href="https://rsvpgame.com/privacy" target="_blank" className="hover:underline">politique de confidentialité</Link>. Vous pouvez vous désinscrire à n'importe quel moment par le lien situé en bas de la newsletter.
+                                    En cliquant ci-dessous pour soumettre ce formulaire, vous reconnaissez que les informations que vous fournissez seront traitées conformément 
+                                    à notre <Link href="https://rsvpgame.com/privacy" target="_blank" className="hover:underline">politique de confidentialité</Link>. 
+                                    Vous pouvez vous désinscrire à n'importe quel moment par le lien situé en bas de la newsletter.
                                 </div>
-
-
-
-
-
-
-
-
 
                                 <div className="mt-6 ml-form-recaptcha ml-validate-required">
                                     <div id="recaptcha" className="g-recaptcha flex flex-row justify-center" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
                                 </div>
-
-
-
-
-
-
-
-
-
-
-
 
                                 <input type="hidden" name="ml-submit" value="1" />
                                 <div className="mt-6 flex flex-row justify-center">
@@ -162,8 +149,6 @@ export default function NewsletterForm() {
 
                             </div>
                         </form>
-
-
                     </div>
 
                     <div ref={successBlockRef} className="ml-block-success flex flex-col items-center" style={{ display: "none" }}>

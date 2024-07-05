@@ -6,7 +6,6 @@ import Footer from './Footer';
 
 export default function MainLayout(props) {
     return (
-
         <div className={props.className}>
             <header className="2xl:mb-10">
                 <Header />

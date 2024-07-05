@@ -1,5 +1,5 @@
 import keyart from "../images/header_v1.png";
-import background from "../images/background.jpg";
+import background from "../images/background.webp";
 import favicon from "./favicon-32.png";
 
 import { Inter } from 'next/font/google'

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { useRouter  } from 'next/navigation'
-import buttonImg from "../../images/button-white.png";
+import buttonImg from "../../images/button-white.webp";
 
 export default function NewsletterButton(props) {
     const router = useRouter();
