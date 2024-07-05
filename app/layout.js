@@ -14,11 +14,24 @@ const fontInter = Inter({
     variable: '--font-inter'
 });
 
+const titlePage = "RSVP : le jeu vidéo";
+const descriptionPage = "RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !";
+
 
 export const metadata = {
-    title: "RSVP : le jeu vidéo",
-    description: "RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !",
-    metadataBase: new URL("https://rsvpgame.com/")
+    title: titlePage,
+    description: descriptionPage,
+    metadataBase: new URL("https://rsvpgame.com/"),
+    openGraph: {
+        title: titlePage,
+        description: descriptionPage
+    },
+    twitter: {
+        title: titlePage,
+        description: descriptionPage,
+        url: "https://rsvpgame.com",
+        creator: "Team RSVP"
+    }
 }
 
 
@@ -30,13 +43,7 @@ export default function RootLayout({ children }) {
                 <meta name="googlebot" content="nofollow" />
                 <link rel="canonical" href="https://rsvpgame.com" key="canonical" />
                 <meta name="thumbnail" content={keyart.src} />
-                <meta property="og:title" content="RSVP : le jeu vidéo" />
-                <meta property="og:description" content="RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !" />
                 <meta content="summary_large_image" name="twitter:card" />
-                <meta name="twitter:title" content="SVP : le jeu vidéo" />
-                <meta name="twitter:description" content="RSVP est un jeu PC d'enquête et de puzzle narratif dans lequel vous incarnez un·e wedding planner. Votre spécialité : créer des plans de table parfaits !" />
-                <meta name="twitter:url" content="https://rsvpgame.com" />
-                <meta property="twitter:creator" content="Team RSVP" />
             </head>
             <body style={{'--image-url': `url(${background.src})`}} className={`${fontInter.variable} ${fontCoquette.variable}` + " font-inter bg-[image:var(--image-url)] text-mainColor"}>
                 <div id="root">
