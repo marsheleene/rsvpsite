@@ -15,7 +15,8 @@ export const metadata = {
         ]
     },
     twitter: {
-        title: titlePage
+        title: titlePage,
+        card: 'summary_large_image',
     }
 }
 
