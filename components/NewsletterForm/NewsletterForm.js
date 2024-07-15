@@ -144,10 +144,12 @@ export default function NewsletterForm() {
                     <div ref={successBlockRef} className="ml-block-success flex flex-col items-center" style={{ display: "none" }}>
                         <Image
                             src={mail}
-                            alt="Une illutration d'un carton RSVP avec la réponse 'oui' cochée"
+                            alt="Une illutration d'un carton RSVP"
                             className="sm:max-w-[380px]"
                         />
-                        <p className="text-center">Un e-mail de confirmation vient d'être envoyé sur l'adresse que vous avez indiquée.</p>
+                        <p className="text-center">Pour confirmer votre inscription, un e-mail va vous être envoyé sur l'adresse que vous avez indiquée. 
+                            Si vous ne l'avez pas reçu, vous pouvez regarder dans votre dossier spam.
+                        </p>
                         <button className="mt-6 p-3 rounded-2xl border-2 border-linkColor bg-white hover:bg-linkColor text-xl hover:text-white"
                             onClick={() => router.push('/')}
                             type="button">
